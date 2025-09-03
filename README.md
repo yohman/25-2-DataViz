@@ -1,141 +1,259 @@
-# Data Visualization – Course Overview (Bilingual Intro)
+# Data Vizualization – Fall 2025 Course Agenda (Bilingual)
 
-**Instructor**: 河野 洋  
-**Semester**: Fall 2025  
-**Language**: Japanese with English terms  
-**Level**: Undergraduate (Introductory)  
-**Format**: Face-to-face, project-based  
-**Tools Introduced**: Google Sheets, RawGraphs, Flourish, Python (Colab), Observable, Mapbox, HTML/CSS/JS  
+**Instructor**: Yoh  
+**Language**: 日本語 + English (50/50 mixed instruction)  
+**Tools**: Google Sheets, RawGraphs, Datawrapper, Chart.js, JavaScript, GitHub Pages
 
 ---
 
-## Weekly Breakdown
+## Week 1 – What is Data Visualization? / データの可視化とは？
 
-### Week 1: What is Data Visualization?
-**Lecture**: Visual thinking and data storytelling  
-**Activity**: Reconstruct a chart from verbal instructions  
-**Tool**: Google Sheets  
-**Reflection**: データを伝えるってどういうこと？  
-**Homework**: 「自分の一日」を1つのデータで可視化
+**Lecture**  
+- Why visualize? 情報を「見る化」することで何がわかる？  
+- Reference: Week 1 slides (Intro) — **Slides 3–17**  
+- Examples: Gapminder, Datasaurus, Anscombe’s Quartet  
+- Visual thinkingとcommunicationの違いに注目
 
----
+**Workshop**  
+**Same Data, Different Story**  
+- 同じ小さなデータセットを使い、それぞれ異なる目的と観衆を想定してビジュアル化  
+- 描かれたグラフを比較して、「誰に何を伝えたかったか？」を分析
 
-### Week 2: Design with Purpose
-**Lecture**: Explore / Explain / Exhibit  
-**Activity**: Visualize the same data for different audiences  
-**Tool**: RawGraphs  
-**Reflection**: 目的が違うと見え方も変わる  
-**Homework**: 同じデータを2つの目的で可視化して提出
+**Reflection**  
+あなたのデザインは何を伝えるためのものでしたか？
 
----
-
-### Week 3: Data Types & Chart Types
-**Lecture**: データ型と視覚変数  
-**Activity**: Match charts to data meaning  
-**Tool**: Flourish  
-**Reflection**: 間違った可視化はなぜ起きる？  
-**Homework**: Flourishでの静的ビジュアライズ作成
+**Homework**  
+同じデータを2つの目的で可視化（手描き or Google Sheets）し、GitHub Pages に公開  
+バイリンガルで意図を解説し、URL を提出
 
 ---
 
-### Week 4: Exploratory Data Analysis (EDA)
-**Lecture**: 可視化前の「見る力」  
-**Activity**: Pythonでのデータチェック体験  
-**Tool**: Google Colab (Pandas)  
-**Reflection**: データのクセや偏りはどこに？  
-**Homework**: 与えられたデータの簡易EDAレポート提出
+## Week 2 – GitHub Pages Setup / GitHub ページの公開準備
+
+**Lecture**  
+- GitHub アカウント作成とリポジトリ構造  
+- GitHub Pages で HTML を公開する方法  
+- GitとGitHubの基本（commit, push, pull）  
+- Chart.js や JS-based tools 公開の基礎インフラとしての役割
+
+**Workshop**  
+- 各自 GitHub リポジトリ作成  
+- `index.html` を作成し公開  
+- 自己紹介やビジュアルの一部を反映させる
+
+**Reflection**  
+「誰かに見せる」可視化と、自分だけの可視化の違いは？
+
+**Homework**  
+GitHub Pages に自己紹介ページを公開し、URL を提出
 
 ---
 
-### Week 5: Visual Encodings
-**Lecture**: 色・形・位置などの視覚表現  
-**Activity**: 比較ワーク：どれが伝わる？  
-**Tool**: Observable + Plot  
-**Reflection**: 見せたい vs 見えてしまう  
-**Homework**: 視覚変数を意識した可視化（自由形式）
+## Week 3 – Data Types and Chart Forms / データ型とチャートの選び方
+
+**Lecture**  
+- Categorical / Ordinal / Quantitative  
+- Tidy vs Messy data  
+- Reference: Week 3 slides (Data Models) — **Slides 6–22**
+
+**Workshop**  
+- RawGraphs で複数のチャートタイプ（bar, alluvial, circle）を試す  
+- それぞれの encoding の意味と適用の向き不向きを体験
+
+**Reflection**  
+「このデータにはこのグラフが合う」と思った理由は？
+
+**Homework**  
+同じデータで2種類のチャートを作成し、GitHub Pages に比較と解説を公開  
+URL を提出
 
 ---
 
-### Week 6: Interaction & Filtering
-**Lecture**: ハイライト・選択・リンクの効果  
-**Activity**: インタラクティブなグラフ体験  
-**Tool**: Observable Plot (linked views)  
-**Reflection**: 触れる可視化は何が変わる？  
-**Homework**: 簡単なインタラクション付きグラフ制作
+## Week 4 – Exploratory Data Analysis / 探索的データ分析
+
+**Lecture**  
+- EDA = 感じる・探る・見つける  
+- データの分布、外れ値、クラスタを視覚的に理解  
+- Reference: Week 4 slides (EDA) — **Slides 5–16**
+
+**Workshop**  
+- Google Sheets で scatter, histogram, boxplot を作成  
+- Pivot table でサマリー分析
+
+**Reflection**  
+意外な発見や気づきはありましたか？
+
+**Homework**  
+自身の選んだデータで EDA を実施し、可視化 2 種 + 解説を GitHub Pages に公開  
+URL 提出
 
 ---
 
-### Week 7: Midterm Project Planning
-**Lecture**: テーマの選び方と問いの立て方  
-**Activity**: アイデア共有とフィードバック  
-**Tool**: Peer discussion + slides  
-**Reflection**: 良い問いはどんな問い？  
-**Homework**: プロジェクトテーマ＋使用データ提出
+## Week 5 – Visual Encoding / 視覚変数とその使い方
+
+**Lecture**  
+- Position, length, shape, color の使い方  
+- Encoding によって意味がどう変わるか？  
+- Reference: Week 5 slides (Visual Encoding) — **Slides 4–19**
+
+**Workshop**  
+- Datawrapper で同じデータを異なる encoding で再可視化  
+- 表現を比較して意図の伝わりやすさを議論
+
+**Reflection**  
+どの encoding が一番「伝わった」と思った？ なぜ？
+
+**Homework**  
+異なる encoding で 2 種のグラフを作成し、GitHub Pages に比較＋解説を公開
 
 ---
 
-### Week 8: Midterm Presentations
-**Activity**: 5分発表 × グループフィードバック  
-**Homework**: Peer reflection form 提出
+## Week 6 – Midterm Project Planning / 中間プロジェクト準備
+
+**Lecture**  
+- プロジェクトの設計：データ選定、目的、観衆設定  
+- 成功する構成とストーリーフレームの設計
+
+**Workshop**  
+- プロジェクトテーマの選定と構成スケッチ  
+- 教員やクラスメートとの相談・レビュー
+
+**Reflection**  
+「誰に何を伝えたいか？」を言語化できましたか？
+
+**Homework**  
+プロジェクト提案ページを GitHub Pages に公開（データソース、目的、構成案を含む）
 
 ---
 
-### Week 9: UI/UX & Visual Hierarchy
-**Lecture**: 視覚階層とユーザー視点  
-**Activity**: グラフの注目ポイント分析  
-**Tool**: Figma / Canva  
-**Reflection**: 最初に目に入るのはどこ？  
-**Homework**: 視覚階層を意識したレイアウト作成
+## Week 7 – Midterm Studio / 中間制作スタジオ
+
+**Lecture**  
+- フィードバックの受け取り方と反映方法  
+- 過去の学生作品から学ぶ改善の視点
+
+**Workshop**  
+- 実装作業とピアレビュータイム  
+- 教員による個別フィードバック
+
+**Reflection**  
+フィードバックによって変更したこと・理由
+
+**Homework**  
+中間プロトタイプを GitHub Pages に公開し、URL を提出
 
 ---
 
-### Week 10: Animation & Time
-**Lecture**: 時系列データと動きの演出  
-**Activity**: アニメーション案の手描き設計  
-**Tool**: Flourish (motion)  
-**Reflection**: 動くと何が伝わる？  
-**Homework**: 小さな時間変化の可視化提出
+## Week 8 – Midterm Presentations / 中間発表会
+
+**Activity**  
+- 各自 5 分間でプロジェクトを発表（目的・構成・チャート・ユーザー意識）  
+- フィードバックシート記入
+
+**Reflection**  
+印象に残った作品とその理由／自分の改善点
+
+**Homework**  
+自己レビュー（100–150 字）を GitHub Pages に記載
 
 ---
 
-### Week 11: Maps & Narrative
-**Lecture**: 地図と物語のつながり  
-**Activity**: 地図のリデザインと批評  
-**Tool**: Mapbox Studio  
-**Reflection**: 地図って必要？それともノイズ？  
-**Homework**: GeoJSON地図表示＋スタイル変更
+## Week 9 – Chart.js Fundamentals / Chart.js 入門
+
+**Lecture**  
+- Chart.js の構成要素：canvas, config, dataset  
+- JS オブジェクトの基本構文  
+- Live coding でサンプル作成
+
+**Workshop**  
+- Chart.js テンプレートを編集して自作グラフを作成  
+- 軸・色・タイトルなどをカスタマイズ
+
+**Reflection**  
+コーディングによる可視化の利点と課題は？
+
+**Homework**  
+自作グラフを GitHub Pages に公開（JSコード含む）
 
 ---
 
-### Week 12: Web Development
-**Lecture**: 可視化をWebに埋め込む方法  
-**Activity**: HTMLテンプレート編集実習  
-**Tool**: Glitch / GitHub Pages / Observable  
-**Reflection**: 公開する際に大事なことは？  
-**Homework**: 自分の可視化をWebで公開しリンク提出
+## Week 10 – Interaction in Visualization / インタラクションの導入
+
+**Lecture**  
+- Hover, filter, toggle, drill-down  
+- Exploratory vs explanatory の違い  
+- Reference: Week 6 slides (Interaction) — **Slides 3–13**
+
+**Workshop**  
+- Chart.js + DOM 操作でボタンや UI と連携  
+- tooltip や legend filter の実装
+
+**Reflection**  
+インタラクションはユーザー体験をどう変えた？
+
+**Homework**  
+少なくとも 1 種のインタラクション付きグラフを GitHub Pages に公開
 
 ---
 
-### Week 13: Ethics & Project Studio
-**Lecture**: データの誤解・偏見・責任  
-**Activity**: 悪い可視化の再設計  
-**Tool**: Google Slides  
-**Reflection**: 誰が、どう誤解するか？  
-**Homework**: Final Project Draft 提出
+## Week 11 – Animation & Transitions / アニメーションによる変化の表現
+
+**Lecture**  
+- Why animate? 強調・時系列・注意の誘導  
+- Chart.js の transition オプション活用法  
+- Reference: Week 10 slides (Animation) — **Slides 3–14**
+
+**Workshop**  
+- 時系列データで動きをつける  
+- アニメーションを入れた before/after 比較
+
+**Reflection**  
+動きによって伝え方がどう変化した？
+
+**Homework**  
+アニメーションを含むグラフを GitHub Pages に公開し、解説を加える
 
 ---
 
-### Week 14: Final Presentations
-**Activity**: Web上での最終プレゼン  
-**Homework**: Peer review + Instructor feedback
+## Week 12 – Maps & Narrative / 地図とストーリーテリング
+
+**Lecture**  
+- Choropleth, symbol maps, tile layers  
+- 読者主導／作者主導ナラティブの違い  
+- Reference: Week 11 slides (Maps & Narrative) — **Slides 3–15**
+
+**Workshop**  
+- Datawrapper で地図付き可視化を作成  
+- ステップ型ナラティブや注釈を追加
+
+**Reflection**  
+地図を使うことで伝わりやすくなった点は？
+
+**Homework**  
+地図付きストーリービジュアライゼーションを GitHub Pages に公開
 
 ---
 
-## Final Project
+## Week 13 – Final Project Work Session / 最終制作セッション
 
-- **Topic**: 学生自身が選んだ社会・文化・技術テーマ  
-- **Tools**: Python, JavaScript, Flourish, Observable, Mapbox など自由  
-- **Format**: Web-based visualization + short caption or story (日本語 / 英語)  
-- **Grading**: 意図の明確さ・技術・デザイン・創造性・完成度  
+**Workshop**  
+- 最終プロジェクト構築作業（HTML/CSS/JS 調整）  
+- Peer QA + 教員レビュー  
+- モバイル表示・配色など細部調整
+
+**Reflection**  
+「伝えたいこと」に最も力を入れて表現できた部分は？
+
+**Homework**  
+最終バージョンを GitHub Pages に公開、URL 提出
 
 ---
+
+## Week 14 – Final Presentations / 最終発表会
+
+**Activity**  
+- 5分発表（目的・対象・構成・工夫）＋ フィードバック記入  
+- 相互評価シートで投票・コメント共有
+
+**Homework**  
+自己レビュー（200–300 字）と最終プロジェクトリンクを GitHub Pages に掲載
